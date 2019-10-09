@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_form.css">
     <title>My Layout</title>
 </head>
 <body>
@@ -63,6 +64,77 @@
     </div>
     </div>
 </section>
+<form id="form_subscribe" method="POST">
+    <div class="title_form">
+        <h1>Become part of our family</h1>
+    </div>
+    <fieldset>
+        <legend>Chi sei?</legend>
+        <div>
+            <label for="nome_cognome">Nome Cognome</label>
+            <input id="nome_cognome" name="nome_cognome" type="text" placeholder="Mario Rossi"  required/>
+        </div>
+        <div>
+            <label for="e-mail">Indirizo e-mail</label>
+            <input id="e-mail" name="email" type="email" placeholder="something@mail.com" required/>
+        </div>
+        <div>
+            <label for="phone_number">Telefono</label>
+            <input id="phone_number" name="phone_number" type="tel" required/>
+        </div>
+        <fieldset class="gender">
+                <div>
+                   <label for="gender">Sesso</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="gender" name= "gender" type="radio" name="gender" value="male" checked> Male
+                    <input id="genderf" name= "gender" type="radio" name="gender" value="female"> Female<br>
+                    
+                </div>
+            </fieldset>
+    </fieldset>
+
+    <fieldset>
+        <legend>Cosa ti piace leggere?</legend>
+        <div>
+            <label for="genre">Genere preferito:</label>
+            <input id="genre" name="genre" type="text" list="favorite_genre" required/>
+            <datalist id="favorite_genre">
+                <select>
+                    <option value="Giallo"></option>
+                    <option value="Fantascienza"></option>
+                    <option value="Romanzo storico"></option>
+                </select>
+            </datalist>
+        </div>
+        <div>
+            <label for="author">Chi è il tuo autore pereferito?</label>
+            <input id="author" name="author" type="text" required/>
+        </div>
+        <div>
+            <label for="book">Il tuo libro preferito</label>
+            <input id="book" name="book" type="text" required/>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Raccontaci un po' di te</legend>
+        <div>
+            <label for="hobies">Che fai nel tempo libero?</label>
+            <input id="hobies" name="hobies" type="text" >
+        </div>
+        <div>
+            <label for="work">Che fai nella vita?</label>
+            <input id="work" name="work" type="text" required/>
+        </div>
+    </fieldset>
+    
+    <div>
+      <button class="submit" type="submit"> 
+        <span id="submit" >Submit</span>
+      </button>
+    </div>
+        
+    
+    
+</form>
 
                     
             
