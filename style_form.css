@@ -1,3 +1,8 @@
+.flex-content{
+display: flex;
+background-color: antiquewhite;
+}
+
 
 .form_subscribe{
     padding: 10px;
@@ -47,3 +52,4 @@ input {
     padding: 8px;
     border: 2px solid black;
 }
+
